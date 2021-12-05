@@ -4,81 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:gravity="center"
     android:layout_gravity="center"
     android:background="@color/black"
-    >
+    android:gravity="center"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:background="@drawable/round_border"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Paste your music URL here"
-            android:padding="10dp"
-            android:textColor="@color/white"
-            android:gravity="center"
-            />
-        <EditText
-            android:id="@+id/url"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:padding="100dp"
-            android:textColorHint="@color/white"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            />
-
-        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
-            android:id="@+id/player"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="invisible"
-            />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            >
-            <ImageButton
-                android:id="@+id/rewind"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/backward"
-                android:background="@color/transparent"
-                />
-            <ImageButton
-                android:id="@+id/play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/play"
-                android:background="@color/transparent"
-                android:layout_margin="30dp"
-                />
-            <ImageButton
-                android:id="@+id/forward"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/forward"
-                android:background="@color/transparent"
-                />
+            android:layout_margin="10dp"
+            android:background="@drawable/round_border"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Paste your music URL here"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="0dp"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+
+                >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+
+            </com.google.android.exoplayer2.ui.PlayerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/rewind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backward"
+                     />
+
+                <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/play"
+                     />
+
+                <ImageButton
+                    android:id="@+id/forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/forward"
+                    />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
-
-
-    </LinearLayout>
-
+    </ScrollView>
 
 
 </LinearLayout>
