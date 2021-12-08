@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/backward.xml" value="0.403125" />
+        <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/backward_black.xml" value="0.23489583333333333" />
         <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/forward.xml" value="0.403125" />
+        <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/forward_black.xml" value="0.23489583333333333" />
         <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/pause.xml" value="0.403125" />
+        <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/pause_black.xml" value="0.23489583333333333" />
         <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/play.xml" value="0.403125" />
+        <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/play_black.xml" value="0.23489583333333333" />
         <entry key="..\:/#/android/Mplayer/app/src/main/res/drawable/round_border.xml" value="0.403125" />
         <entry key="..\:/#/android/Mplayer/app/src/main/res/layout/activity_main.xml" value="0.3729166666666667" />
       </map>
